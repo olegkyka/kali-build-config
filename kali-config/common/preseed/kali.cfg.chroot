@@ -1,0 +1,9 @@
+# Various preseeding for auto-installed packages
+
+# Do not register it in inetd so that its status can be controlled
+# individually
+atftpd atftpd/use_inetd boolean false
+
+# Set keyboard locale
+d-i console-keymaps-at/keymap select pt-latin1
+d-i keyboard-configuration/xkb-keymap select pt
